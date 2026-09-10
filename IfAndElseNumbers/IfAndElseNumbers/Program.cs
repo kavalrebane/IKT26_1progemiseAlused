@@ -11,17 +11,19 @@
             //toimub kontroll, kas sisestatud väärtus on number
             //kasutada if ja else lauseid
 
-            string number = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            if (number == "")
+            //kontrollime, kas sisestatud väärtus on number
+            if (int.TryParse(input, out int number))
             {
-                
+                Console.WriteLine($"Sisestatud number on: {number}");
+            }
+            else
+            {
+                Console.WriteLine("Sisestatud väärtus ei ole number");
             }
 
-            Console.WriteLine("sisestasid numbri");
-            Console.WriteLine(number);
-
-            Console.BackgroundColor = ConsoleColor.Magenta;
+            
             
         }
     }
