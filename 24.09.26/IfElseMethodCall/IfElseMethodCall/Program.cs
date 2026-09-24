@@ -18,6 +18,8 @@
 
             if (method == "ja")
             {
+                //kui kirjutan meetodi nime, siis seda nimetatakse
+                //meetodi välja kutsumiseks
                 Hellomethod();
             }
             else
