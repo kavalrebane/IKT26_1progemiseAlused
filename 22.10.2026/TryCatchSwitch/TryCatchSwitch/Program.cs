@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!, World");
+            Console.WriteLine("Try catch Switch");
 
 
             try
@@ -28,6 +28,8 @@
             catch (FormatException)
             {
                 Console.WriteLine("Palun sisesta number");
+            }
+            //kui number on suurem, kui int 32 bit'i
             catch (OverflowException)
             {
                 Console.WriteLine("number on liiiiiiiiga suur");
